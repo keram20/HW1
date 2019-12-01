@@ -7,3 +7,20 @@ yum install asciidoc xmlto docbook2x
 git config --list //zistim pod kym sa to bude uploadovat
 
 git init //inicializujem folder pre init
+
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+
+create a new repository on the command line
+
+echo "# HW1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/keram20/HW1.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/keram20/HW1.git
+git push -u origin master
