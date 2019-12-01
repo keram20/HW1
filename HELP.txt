@@ -1,0 +1,9 @@
+
+yum install git-all
+
+git --version //zistim aku verziu som nainstaloval
+
+yum install asciidoc xmlto docbook2x
+git config --list //zistim pod kym sa to bude uploadovat
+
+git init //inicializujem folder pre init
