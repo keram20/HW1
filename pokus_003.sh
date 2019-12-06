@@ -13,8 +13,8 @@ then
 	curl -fsSL https://get.docker.com/ | sh
 	sudo systemctl start docker
 	sudo systemctl status docker
-	systemctl enable docker
-	usermod -aG docker $(whoami)
+#	systemctl enable docker
+#	usermod -aG docker $(whoami)
 else 
 	echo "je to RH8"
 	sudo dnf module list | grep container-tools #sprav funkciu na porovnanie
