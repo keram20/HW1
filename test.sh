@@ -16,6 +16,17 @@ read INPUT_STRING
                 echo "FIrefox has been instaled"
                 ;;
                 *)
+		 echo "I have installed Firefox and Chrome"
+                wget https://dl.google.com/linux/direct/google-chrome-stable_cu$
+          	sudo yum localinstall google-chrome-stable_current_x86_64.rpm
+                yum remove firefox
+                cd /usr/local
+                wget http://ftp.mozilla.org/pub/firefox/releases/70.0.1/linux-x$
+                tar xvjf firefox-70.0.1.tar.bz2
+                sudo ln -s /usr/local/firefox/firefox /usr/bin/firefox
 		echo "both"
+                ;;
+
+	
 	esac
 
