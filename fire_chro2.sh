@@ -3,7 +3,8 @@
 echo "what  would you like to install: Chrome option one or Firefox option two or  both ?"
 while 
 
-  read -p INPUT_STRING
+#  read -p INPUT_STRING
+INPUT_STRING=2
   case $INPUT_STRING in
         1)
           	wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
