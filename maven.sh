@@ -21,11 +21,11 @@ sudo export M2_HOME=/opt/maven > /etc/profile.d/maven.sh
 sudo export MAVEN_HOME=/opt/maven > /etc/profile.d/maven.sh
 sudo export PATH=${M2_HOME}/bin:${PATH} > /etc/profile.d/maven.sh
 
-chmor +755 /etc/profile.d/maven.sh
+sudo chmor +755 /etc/profile.d/maven.sh
 
 
-source /etc/profile.d/maven.sh
+sudo source /etc/profile.d/maven.sh
 
-mvn -version
+sudo mvn -version
 
 
