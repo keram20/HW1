@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sudo yum install maven
+sudo yum install -y maven
 mvn -version
 
 #intall OpenJDK
