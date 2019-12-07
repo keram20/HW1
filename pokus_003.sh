@@ -4,7 +4,7 @@ cat /etc/*release > logs001.txt
 
 File=logs001.txt
 
-if grep -q "CentOS Linux 7 (Core)" "$File"; 
+if [ grep -q "CentOS Linux 7 (Core)" "$File" ]; 
 #if grep -q "3.10" "$File"; #toto je RH7 or Centos7
 then
 
