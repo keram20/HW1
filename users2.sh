@@ -20,7 +20,7 @@ ID=$( awk '{print $2}' users.txt)
 	sudo useradd -u $ID $user
 #	usermod -g $ID $user
 #        id -gn $user
-	sudo passwd -d $user; 
-	sudo echo $user"123" | passwd  $user --stdin; 
+#	sudo passwd -d $user; 
+#	sudo echo $user"123" | passwd  $user --stdin; 
 #done
 
