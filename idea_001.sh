@@ -6,11 +6,10 @@ sudo tar -xvf ideaIC-2018.3.2.tar.gz
 
 if [ -d "ideaIC-2018.3.2/" ]; then
    echo "Installing config files in ${DIR}..."
-   
+
 else
   #echo "Error: ${DIR} not found. Can not continue."
   mkdir ideaIC-2018.3.2/
-  exit 1
 fi
 
 cd ideaIC-2018.3.2/
