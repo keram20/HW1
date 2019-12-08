@@ -15,14 +15,16 @@ fi
 
 cd ideaIC-2018.3.2/
 
-if [ -d "/usr/bin/idea" ]; then
-   rm /usr/bin/idea
-   echo " rm symb_link"
+cd /usr/bin/
+if [ -h "idea" ]; then
+   cd  /usr/bin/
+   sudo rm -f idea
+   echo " rm symb_link removed"
    
 else
   echo " create symb_link"
+
 fi
 
 sudo ln -s ./ideaIC-2018.3.2/bin/idea.sh /usr/bin/idea
-
 
