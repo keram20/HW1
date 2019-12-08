@@ -1,5 +1,14 @@
 #!/bin/bash
 
+while getopts ":h" opt;
+    do
+      	case $opt
+        in
+            h) echo "if you need help ask your peer or Google"; exit 0;;
+            ?) echo "value is not valid"; exit 2;;
+        esac
+ done
+
 echo "what  would you like to install: Chrome option one or Firefox option two or  both ?"
 while 
 #  read -p INPUT_STRING
