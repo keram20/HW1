@@ -17,7 +17,7 @@ while getopts ":hfc" opt;
  done
 
 --------------------------------------
---- idea -----------------------------
+--- add user  -----------------------------
 -------------------------------------
 #!/bin/bash
 
@@ -145,7 +145,6 @@ if [ -d "ideaIC-2018.3.2/" ]; then
 else
   #echo "Error: we have to create folder."
   mkdir ideaIC-2018.3.2/
-  exit 0
 fi
 
 cd ideaIC-2018.3.2/
@@ -155,13 +154,13 @@ if [ -h "idea" ]; then
    cd  /usr/bin/
    sudo rm -f idea
    echo " rm symb_link removed"
+   sudo ln -s ./ideaIC-2018.3.2/bin/idea.sh /usr/bin/idea
    
 else
   echo " create symb_link"
+  sudo ln -s ./ideaIC-2018.3.2/bin/idea.sh /usr/bin/idea
 
 fi
-
-sudo ln -s ./ideaIC-2018.3.2/bin/idea.sh /usr/bin/idea
 
 #!/bin/bash
 
