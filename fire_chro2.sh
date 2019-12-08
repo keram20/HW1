@@ -10,8 +10,8 @@ while getopts ":h" opt;
  done
 
 echo "what  would you like to install: Chrome option one or Firefox option two or  both ?"
-while 
-#  read -p INPUT_STRING
+ 
+# read -p INPUT_STRING
 INPUT_STRING=2
 	case $INPUT_STRING 
 	in
